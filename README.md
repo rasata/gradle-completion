@@ -230,12 +230,6 @@ You may need to invalidate the cache using the cache config above or by executin
 ## Troubleshooting
 If zsh completion isn't working, first try checking your `$fpath` with `echo $fpath`.
 
-zsh completion using `./gradlew` may not work on Linux if you don't have `.` on your `$PATH`,
-so I recommend adding it in your `~/.zshrc` file:
-```bash
-export PATH=".:$PATH"
-```
-
 > HEADS UP: If you get an error 'parse error near `]]"', please [upgrade zsh](http://stackoverflow.com/questions/17648621/how-do-i-update-zsh-to-the-latest-version).
 zsh 5.0.5 has a bug in script parsing that is fixed as of zsh 5.0.8. See issues #4 and #7 for more details.
 
